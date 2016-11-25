@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="id.sch.smktelkom_mlg.project.xirpl607162534.mokletblitz">
+
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -18,5 +19,11 @@
         </activity>
         <activity android:name=".view.activity.ViewActivity">
         </activity>
+        <activity
+            android:name=".IndexActivity"
+            android:label="@string/title_activity_index"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
+
 </manifest>
