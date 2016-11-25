@@ -17,8 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.ViewActivity">
-        </activity>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".ProfileActivity"/>
         <activity
             android:name=".IndexActivity"
             android:label="@string/title_activity_index"

@@ -1,8 +1,9 @@
 package id.sch.smktelkom_mlg.project.xirpl607162534.mokletblitz;
 
 import android.content.Intent;
-import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;

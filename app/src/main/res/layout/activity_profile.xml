@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.project.xirpl607162534.mokletblitz.ProfileActivity">
+    tools:context="id.sch.smktelkom_mlg.project.xirpl607162534.mokletblitz.Menu1">
 
 
     <LinearLayout

@@ -1,9 +1,10 @@
 package id.sch.smktelkom_mlg.project.xirpl607162534.mokletblitz;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.app.Activity;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
+import android.support.annotation.Nullable;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
