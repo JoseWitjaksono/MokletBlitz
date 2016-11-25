@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    private String UPLOAD_URL ="http://20.20.20.124/android/upload_image/upload.php";
+    private String UPLOAD_URL ="http://witjaksono.id/upload_image/upload.php";
 
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
