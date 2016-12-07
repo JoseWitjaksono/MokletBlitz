@@ -21,10 +21,12 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.io.IOException;
 
@@ -42,13 +44,15 @@ public class Menu2 extends Fragment{
 	private Button buttonChoose,buttonUpload;
 	private Uri filePath;
 	private StorageReference storageRef;
+	private FirebaseAuth firebaseAuth;
 
 		@Nullable
 		@Override
 		public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
 			View myView = inflater.inflate(R.layout.activity_upload, container, false);
-
+			firebaseAuth = FirebaseAuth.getInstance();
+			FirebaseUser user = firebaseAuth.getCurrentUser();
 			storageRef = FirebaseStorage.getInstance().getReference();
 			imageView = (ImageView) myView.findViewById(R.id.ivGalery);
 			buttonChoose = (Button) myView.findViewById(R.id.buttonChoose);
@@ -98,7 +102,7 @@ public class Menu2 extends Fragment{
 			progressDialog.setTitle("Uploading...");
 			progressDialog.show();
 
-			StorageReference riversRef = storageRef.child("images/rivers.jpg");
+			StorageReference riversRef = storageRef.child("images/"+firebaseAuth.getCurrentUser().getUid()+".jpg");
 
 			riversRef.putFile(filePath)
 					.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
